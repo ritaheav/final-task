@@ -1,0 +1,332 @@
+body {
+    margin: 0%;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    background-color: grey;
+}
+h3 {
+    color: white;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+    width: 50%;
+    justify-content: flex-end;
+}
+.logo {
+    margin-left: 2%;
+    color: white;
+    cursor: pointer;
+}
+.menu button {
+    color: black;
+    background-color: yellow;
+    border: 0.5px solid black;
+    border-radius: 10%;
+    width: 15%;
+    height: 40px;
+    cursor: pointer;
+}
+.functionality-overview {
+    color: white;
+}
+.landing-page {
+    background: rgb(37, 36, 36);
+}
+.screenshots {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    padding-top: 7%;
+}
+.screenshots img {
+    width: 15%;
+    margin-left: 10%;
+    border:1px solid yellow;
+}
+.functionality-overview {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+.functionality-overview h3 {
+    width: 15%;
+    margin-left: 2%;
+}
+.functionality-overview h4 {
+    width: 63%;
+    margin-left: 1%;
+}
+.link-to-piskel {
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+.link-to-piskel h3 {
+    margin-left: 2%;
+}
+.link-to-piskel a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 2.5%;
+}
+.link-to-piskel a img {
+    width: 40%;
+}
+.link-to-piskel a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.link-to-itself {
+    display: flex;
+    align-items: center;
+}
+.link-to-itself a {
+    text-decoration: none;
+}
+.link-to-itself a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.link-to-itself img {
+    width: 3%;
+    margin-left: 1%;
+}
+.info-about-author {
+    display: flex;
+    align-items: center;
+    margin-top: 4%;
+}
+.info-about-author h3 {
+    margin-left: 2%;
+}
+.info-about-author p {
+    color: white;
+    margin-left: 9%;
+}
+.hidden {
+    display: none;
+}
+.drawing-area {
+    height: 610px;
+}
+.main-page {
+    margin-top: 2%;
+    display: flex;
+}
+.bottom {
+    width: 11%;
+    margin-left: 2%;
+}
+.tools {
+    display: flex;
+    flex-flow: column;
+}
+.tools button {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid black;
+}
+.tools p {
+    margin-left: 10%;
+}
+.tools #eraser img {
+    width: 16%;
+}
+.tools #stroke img {
+    width: 15%;
+}
+.tools img {
+    margin-left: 5%;
+}
+.tools #transform {
+    opacity: 0.5;
+}
+.tools .active {
+    background: grey;
+}
+.bottom .color p {
+    margin-left: 15%;
+}
+.bottom .tools p,
+.bottom .color p { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.541327);
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+.input-group .p {
+    margin-left: 15px;
+}  
+.input {
+    display: inline-block;
+    cursor: pointer;
+}
+.input-color {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+}
+.input-color-wrapper {
+    background: #000;
+    border-radius: 50%;
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;  
+  }
+.input-color-wrapper .input-color {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+input[type="color"] {
+    visibility: hidden;
+    display: block;
+    height: inherit;
+    width: inherit;
+  }
+input[type="color"]:focus {
+    outline: 0;
+} 
+input[type="color"]::-webkit-color-swatch-wrapper {
+    height: inherit;
+    width: inherit;
+}
+input[type="color"]::-webkit-color-swatch {
+    height: inherit;
+    width: inherit;
+}
+.draw-image {
+    margin-left: 22%;
+}
+#canvas {
+    height: 512px;
+    width: 512px;
+    image-rendering: pixelated;
+    border: 1px solid black;
+    position: absolute;
+    background-color: white;
+    background-size: cover;
+}
+.choose-size {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin-left: 42%;
+    width: 15%;
+}
+.choose-size button {
+    width: 35%;
+    height: 35px;
+}
+.tools .active {
+    background-color: rgb(102, 100, 100);
+}
+.choose-size .active {
+    background-color: rgb(102, 100, 100);
+}
+.drawing-canvas {
+    z-index: 2;
+    width: 115px;
+    height: 115px;
+}
+.keyboard-shortcuts {
+    background: url('./images/keyboard.png');
+    background-size: cover;
+    width: 41%;
+    height: 62px;
+    border: none;
+    margin-top: 55%;
+    cursor: pointer;
+}
+.shortcuts-menu {
+    list-style: none;
+    position: absolute;
+    visibility: hidden;
+    width: 12%;
+    padding: 0;
+    margin-top: -175px;
+    background: white;
+    border-radius: 6px;
+}
+.shortcuts-menu::after {
+    content: "";
+    position: absolute; 
+}
+.show {
+    visibility: visible;
+}
+.shortcuts-menu li img {
+    width: 20%;
+    margin-left: 6%;
+}
+.shortcuts-menu li {
+    display: flex;
+    align-items: center;
+}
+.shortcuts-menu li p {
+    margin-left: 5%;
+}
+.drawing-layers .selected {
+    border: 3px solid #f8a61b;
+} 
+.drawing-canvas-container .selected {
+    border: 3px solid #f8a61b;
+} 
+@media(min-width: 320px) and (max-width: 703px) {
+    .menu button {
+        width: 47%;
+    }
+    .screenshots,
+    .functionality-overview {
+        flex-flow: column;
+        margin-left: 0; 
+        padding-top: 0;
+    }
+    .functionality-overview {
+        margin-top: 0;
+    }
+    h3 {
+        text-align: center;
+    }
+    .screenshots img {
+        width: 60%;
+        margin-left: 0;
+        margin-bottom: 5%;
+    }
+    .functionality-overview h3,
+    .functionality-overview h4 {
+        text-align: center;
+        width: 90%;
+        margin-left: 4%;
+    }
+    .link-to-itself img {
+        width: 10%;
+    }
+}
+@media screen and (width: 768px) {
+    .landing-page{
+        height: 100vh;
+    }    
+}
+@media screen and (width: 1024px) {
+    .landing-page{
+        height: 100vh;
+    }    
+}

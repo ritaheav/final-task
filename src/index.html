@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Simple-Piskel-Clone</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo"><h1>PISKEL</h1></div>
+            <div class="menu">
+                <button class="create-sprite" type="button">Create sprite</button>
+                <button class="sign-in" type="button">Sign in</button>
+            </div> 
+        </header>
+        <div class="landing-page">
+            <div class="screenshots">
+                <h3>Screenshots</h3>
+                <img src="images/example1.png" />
+                <img src="images/example2.png" />
+                <img src="images/example3.png" />
+            </div>
+            <div class="functionality-overview">
+                <h3>Implemented functionality overview</h3>
+                <h4>In this app user can choose canvas sizes: 32x32 / 64x64 / 128x128. In tools implemented pen, color select, paint bucket, eraser and stroke.
+                    Also user can choose tool by keyboard shortcuts. 
+                </h4>
+            </div>
+            <div class="link-to-piskel">
+                <h3>Link to the editor itself</h3>
+                <a href="https://www.piskelapp.com/"><img src="images/piskel-logo.png" /><h3>Piskel</h3></a>
+            </div>
+            <div class="info-about-author">
+                <h3>About author</h3>
+                <p>I'm a student at the Rolling Scopes School 2019-Q3. You can see another projects on my GitHub.</p>
+            </div>
+            <div class="link-to-itself">
+                <img src="images/Octocat.png" /><a href="https://github.com/ritaheav"><h3>GitHub</h3></a>
+            </div>
+        </div>
+        <div class="drawing-area">
+            <main class="main-page">
+                <div class="bottom">
+                    <div class="tools">
+                        <button type="button" id="paint-bucket" title="(B)"><img src="images/icon-share.png" /><p>Paint bucket</p></button>
+                        <button type="button" id="choose-color" title="(C)"><img src="images/icon-upload.png" /><p>Choose color</p></button>
+                        <button type="button" id="pencil" title="(P)"><img src="images/icon-copy.png" /><p>Pencil</p></button>
+                        <button type="button" id="eraser" title="(E)"><img src="images/eraser.png" /><p>Eraser</p></button>
+                        <button type="button" id="stroke" title="(L)"><img src="images/Line-Tool.png" /><p>Stroke</p></button>
+                    </div>
+                    <div class="color">
+                        <div class="change-color">
+                            <div class="input-group">
+                                <label id="current-color-wrapper" class="input-color-wrapper">
+                                    <input id="current-color" class="input input-color" type="color" value="#000000"/>
+                                </label>
+                                <p class="p">Current color</p>
+                            </div>
+                            <div class="previous-color input-group">
+                                <div id="previous-color" class="input input-color"></div>
+                                <p class="p">Previous color</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="keyboard">
+                        <ul class="shortcuts-menu">
+                            <li><img src="images/letter-b.png" /> <p>- Paint bucket</p></li>
+                            <li><img src="images/letter-c.png" /> <p>- Choose-color</p></li>
+                            <li><img src="images/letter-p.png" /> <p>- Pencil</p></li>
+                            <li><img src="images/letter-e.png" /> <p>- Eraser</p></li>
+                            <li><img src="images/letter-l.png" /> <p>- Stroke</p></li>
+                        </ul>
+                        <button class="keyboard-shortcuts"></button>
+                    </div>
+                </div>
+                <div class="draw-image">
+                        <canvas id="canvas" class="drawing-canvas canvas"></canvas>
+                </div>
+                <div class="choose-size">
+                    <button id="thirty-two" type="button" data-canvas-size="32" data-pixel-size="16">32 х 32</button>
+                    <button id="sixty-four" type="button" data-canvas-size="64" data-pixel-size="8">64 x 64</button>
+                    <button id="one-hundred-and-twenty-eight" type="button" data-canvas-size="128" data-pixel-size="4">128 х 128</button>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
